@@ -1,4 +1,5 @@
 import Vuex from 'vuex'
+
 const createStore = () => {
   const store = new Vuex.Store({
     actions: {
