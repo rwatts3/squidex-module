@@ -9,7 +9,7 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/rb2-bv/squidex",
+  "repository": "https://github.com/zipme/squidex-module",
   "publishConfig": {
     "access": "public"
   },

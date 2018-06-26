@@ -27,7 +27,7 @@ The module features [Squidex](https://squidex.io/) GraphQL API connection.
     // With options
     ['squidex-module', { 
       /* module options */ 
-      endpoint: 'https://cloud.squidex.io/api/content/freebees/graphql',
+      endpoint: 'https://cloud.squidex.io/api/content/<app>/graphql',
       clientId: process.env.SQUIDEX_CLIENT_ID,
       clientSecret: process.env.SQUIDEX_CLIENT_SECRET,
       tokenCacheDuration: 15
@@ -35,7 +35,7 @@ The module features [Squidex](https://squidex.io/) GraphQL API connection.
  ],
 
  squidex: {
-   endpoint: 'https://cloud.squidex.io/api/content/freebees/graphql',
+   endpoint: 'https://cloud.squidex.io/api/content/<app/graphql',
    clientId: process.env.SQUIDEX_CLIENT_ID,
    clientSecret: process.env.SQUIDEX_CLIENT_SECRET,
    tokenCacheDuration: 15
