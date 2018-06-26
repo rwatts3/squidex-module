@@ -53,14 +53,38 @@ Module Description
 - Install dependencies using `yarn install` or `npm install`
 - Start development server using `npm run dev`
 - Add .env under the root directory:
- ```
+  ```
   // example: .env
     SQUIDEX_TOKEN_URL=https://cloud.squidex.io/identity-server/connect/token
     SQUIDEX_TOKEN_GRANT_TYPE=client_credentials
     SQUIDEX_TOKEN_SCOPE=squidex-api
     SQUIDEX_CLIENT_ID=<your:clientid>
     SQUIDEX_CLIENT_SECRET=<secret>
- ```
+  ```
+- In your `store/index.js`:
+  ```
+    import Vuex from 'vuex'
+
+    const createStore = () => {
+      const store = new Vuex.Store({
+        actions: {
+          async nuxtServerInit ({ commit, state }, { req }) {
+            try {
+              await store.dispatch('squidex/initialize') // <- call initialize action!
+            } catch (e) {
+              console.error(e)
+            }
+          }
+        },
+
+        strict: process.env.NODE_ENV !== 'production'
+      })
+      return store
+    }
+
+    export default createStore
+
+  ```
 
 ## License
 
