@@ -12,7 +12,7 @@
 
 ## Features
 
-The module features
+The module features [Squidex](https://squidex.io/) GraphQL API connection.
 
 ## Setup
 - Add `squidex-module` dependency using yarn or npm to your project
@@ -25,8 +25,21 @@ The module features
     'squidex-module',
 
     // With options
-    ['squidex-module', { /* module options */ }],
- ]
+    ['squidex-module', { 
+      /* module options */ 
+      endpoint: 'https://cloud.squidex.io/api/content/freebees/graphql',
+      clientId: process.env.SQUIDEX_CLIENT_ID,
+      clientSecret: process.env.SQUIDEX_CLIENT_SECRET,
+      tokenCacheDuration: 15
+    }],
+ ],
+
+ squidex: {
+   endpoint: 'https://cloud.squidex.io/api/content/freebees/graphql',
+   clientId: process.env.SQUIDEX_CLIENT_ID,
+   clientSecret: process.env.SQUIDEX_CLIENT_SECRET,
+   tokenCacheDuration: 15
+ }
 }
 ```
 
