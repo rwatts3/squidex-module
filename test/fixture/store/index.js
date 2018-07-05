@@ -4,11 +4,6 @@ const createStore = () => {
   const store = new Vuex.Store({
     actions: {
       async nuxtServerInit ({ commit, state }, { req }) {
-        // try {
-        //   await store.dispatch('squidex/initialize')
-        // } catch (e) {
-        //   console.error(e)
-        // }
       }
     },
 
