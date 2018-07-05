@@ -61,30 +61,6 @@ Module Description
     SQUIDEX_CLIENT_ID=<your:clientid>
     SQUIDEX_CLIENT_SECRET=<secret>
   ```
-- In your `store/index.js`:
-  ```
-    import Vuex from 'vuex'
-
-    const createStore = () => {
-      const store = new Vuex.Store({
-        actions: {
-          async nuxtServerInit ({ commit, state }, { req }) {
-            try {
-              await store.dispatch('squidex/initialize') // <- call initialize action!
-            } catch (e) {
-              console.error(e)
-            }
-          }
-        },
-
-        strict: process.env.NODE_ENV !== 'production'
-      })
-      return store
-    }
-
-    export default createStore
-
-  ```
 
 ## License
 
