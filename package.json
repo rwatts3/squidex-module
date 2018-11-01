@@ -1,6 +1,6 @@
 {
   "name": "squidex-module",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Squidex GraphqQL api connection",
   "license": "MIT",
   "contributors": [
