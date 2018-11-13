@@ -1,7 +1,7 @@
 <template>
   <div>
     Home
-    {{ slides }}
+    {{ querySlideContents }}
     <nuxt-link to="page-b"> page b </nuxt-link>
   </div>
 </template>
@@ -11,7 +11,7 @@
 
   export default {
     apollo: {
-      slides: {
+      querySlideContents: {
         query: gql`
           query slides($top: Int, $skip: Int) {
             querySlideContents(top: $top, skip: $skip) {
