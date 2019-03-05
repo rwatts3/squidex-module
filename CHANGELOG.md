@@ -10,6 +10,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
+## [0.0.8](https://github.com/zipme/squidex-module/compare/v0.0.9...v0.0.8) (2019-03-05)
+
+
+
 ## [0.0.9](https://github.com/zipme/squidex-module/compare/v0.0.8...v0.0.9) (2019-03-05)
 
 
