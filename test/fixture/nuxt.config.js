@@ -14,7 +14,8 @@ module.exports = {
     clientId: process.env.SQUIDEX_CLIENT_ID,
     clientSecret: process.env.SQUIDEX_CLIENT_SECRET,
     tokenCacheDuration: 15,
-    cacheFilePath: 'test-token.json'
+    cacheFilePath: 'test-token.json',
+    showDraft: false
   },
   build: {
     vendor: [
