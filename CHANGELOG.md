@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.2](https://github.com/zipme/squidex-module/compare/v0.1.1...v0.1.2) (2019-04-05)
+
+
+### Bug Fixes
+
+* fix apollo request header ([6d81b72](https://github.com/zipme/squidex-module/commit/6d81b72))
+
+
+
 ## [0.1.1](https://github.com/zipme/squidex-module/compare/v0.1.0...v0.1.1) (2019-04-05)
 
 
